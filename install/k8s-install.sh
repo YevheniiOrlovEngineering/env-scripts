@@ -25,6 +25,9 @@ sudo apt-mark hold kubelet kubeadm kubectl kubernetes-cni
 sudo swapoff -a
 sudo sed -i '/ swap / s/^/#/' /etc/fstab
 
+sudo systemctl stop ufw
+sudo systemctl disable ufw
+
 sudo modprobe br_netfilter
 
 sudo sysctl net.bridge.bridge-nf-call-iptables=1

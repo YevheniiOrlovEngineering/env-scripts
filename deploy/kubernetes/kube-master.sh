@@ -9,9 +9,6 @@ fi
 
 rm -rf ${HOME}/.kube/
 
-sudo systemctl stop ufw
-sudo systemctl disable ufw
-
 sudo kubeadm reset
 
 # --pod-network-cidr=10.244.0.0/16 -> flannel
