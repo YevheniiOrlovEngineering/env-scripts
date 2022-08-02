@@ -7,8 +7,7 @@ sudo kubeadm reset
 sudo apt-mark unhold kubectl kubeadm kubelet kubernetes-cni
 sudo apt purge -y kubeadm kubectl kubelet kubernetes-cni
 sudo apt autoremove -y
-sudo rm -rf /etc/cni /etc/kubernetes /var/lib/dockershim /var/lib/etcd /var/lib/kubelet /var/run/kubernetes ~/.kube
-sudo rm /etc/apt/sources.list.d/kubernetes.list
+sudo rm -rf /etc/cni /etc/kubernetes /var/lib/dockershim /var/lib/etcd /var/lib/kubelet /var/run/kubernetes ~/.kube /etc/apt/sources.list.d/kubernetes.list
 
 sudo apt update
 sudo apt install -y apt-transport-https ca-certificates curl
