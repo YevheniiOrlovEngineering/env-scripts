@@ -36,7 +36,7 @@ echo "alias kpo='k get pods -A'" >> ${CONFIG_FILE}
 echo "alias kdesc='k describe pods -n '" >> ${CONFIG_FILE}
 echo "alias klog='k logs -n '" >> ${CONFIG_FILE}
 echo "alias ktok='sudo kubeadm token create $(sudo kubeadm token generate) --print-join-command'" >> ${CONFIG_FILE}
-echo "alias kreset='\${SCRIPTS}/deploy/kube-master.sh'" >> ${CONFIG_FILE}
+echo "alias kreset='\${SCRIPTS}/deploy/kubernetes/kube-master.sh'" >> ${CONFIG_FILE}
 echo >> ${CONFIG_FILE}
 
 echo "# test internet speed connection" >> ${CONFIG_FILE}
