@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Open a new bash session, once script finishes, to enable env changes
+# Open a new bash session, once script finished, to enable env changes
 
 CONFIG_FILE=${CONFIG_FILE:-${HOME}/.bashrc}
 
@@ -8,7 +8,7 @@ GO_VERSION=${GO_VERSION:-1.18.4}
 GO_ARCH=${GO_ARCH:-go${GO_VERSION}.linux-amd64.tar.gz}
 GO_ROOT=${GO_ROOT:-/usr/local/go}
 
-sudo rm -rf ${GO_ROOT} ${HOME}/go
+sudo rm -rf ${GO_ROOT} 
 sed -i '/GOPATH\|GOBIN/d' ${CONFIG_FILE}
 
 wget --show-progress --continue https://golang.org/dl/${GO_ARCH}
