@@ -4,7 +4,7 @@
 
 CONFIG_FILE=${CONFIG_FILE:-${HOME}/.bashrc}
 
-GO_VERSION=${GO_VERSION:-1.18.4}
+GO_VERSION=${GO_VERSION:-1.19.3}
 GO_ARCH=${GO_ARCH:-go${GO_VERSION}.linux-amd64.tar.gz}
 GO_ROOT=${GO_ROOT:-/usr/local/go}
 
