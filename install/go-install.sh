@@ -8,8 +8,8 @@ GO_VERSION=${GO_VERSION:-1.19.3}
 GO_ARCH=${GO_ARCH:-go${GO_VERSION}.linux-amd64.tar.gz}
 GO_ROOT=${GO_ROOT:-/usr/local/go}
 
-sudo rm -rf "${GO_ROOT} "
-sed -i '/GOPATH\|GOBIN/d'"${CONFIG_FILE}"
+sudo rm -rf "${GO_ROOT}"
+sed -i '/GOPATH\|GOBIN/d' "${CONFIG_FILE}"
 
 wget --show-progress --continue https://golang.org/dl/"${GO_ARCH}"
 sudo tar -C /usr/local -xzvf "${GO_ARCH}"
