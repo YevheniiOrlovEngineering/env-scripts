@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd "$(dirname "$0")" || exit
+
 #export VERSION=5:19.03.11~3-0~ubuntu-focal
 
 sudo apt update

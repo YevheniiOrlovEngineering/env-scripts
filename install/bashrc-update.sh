@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd "$(dirname "$0")" || exit
+
 CONFIG_FILE=${CONFIG_FILE:-${HOME}/.bashrc}
 
 echo >> "${CONFIG_FILE}"

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd "$(dirname "$0")" || exit
+
 # Open a new bash session, once script finished, to enable env changes
 
 CONFIG_FILE=${CONFIG_FILE:-${HOME}/.bashrc}

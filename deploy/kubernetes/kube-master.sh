@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd "$(dirname "$0")" || exit
+
 DISABLE_STORAGECLASS="${DISABLE_STORAGECLASS:-false}"
 
 if [ "${DISABLE_STORAGECLASS}" != true ] && [ "${DISABLE_STORAGECLASS}" != false ]; then
