@@ -2,7 +2,7 @@
 
 cd "$(dirname "$0")" || exit
 
-K8S_VERSION=${K8S_VERSION:-1.22.12-00}
+K8S_VERSION=${K8S_VERSION:-1.23.12-00}
 
 sudo apt-get update
 
